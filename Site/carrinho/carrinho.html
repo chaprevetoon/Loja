@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="./main.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <div>
+                <a href="file:///C:/Users/felip/Desktop/Site/loja/loja.html">
+                <input type="submit" value="< Voltar">
+                </a>
+            </div>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="C:\Users\felip\Desktop\Site\Imagens\carrinho.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Meu Carrinho</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div> 
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="C:\Users\felip\Desktop\Site\Imagens\the witch.jpg" alt="">
+                    <p><span>60</span>$</p>
+                </div>
+                <p class="title">The Witcher 3: Wild Hunt</p>
+                <a href="" data-id="1" class="btn-add-cart">Adicionar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="C:\Users\felip\Desktop\Site\Imagens\Metro.jpg" alt="">
+                    <p><span>98</span>$</p>
+                </div>
+                <p class="title"> Metro Exodus</p>
+                <a href="" class="btn-add-cart" data-id="2">Adicionar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="C:\Users\felip\Desktop\Site\Imagens\dead by daylight.jpg" alt="">
+                    <p><span>200</span>$</p>
+                </div>
+                <p class="title">Dead by Daylight</p>
+                <a href="" data-id="3" class="btn-add-cart">Adicionar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="C:\Users\felip\Desktop\Site\Imagens\genshin.jpg" alt="">
+                    <p><span>199</span>$</p>
+                </div>
+                <p class="title">Genshin Impact</p>
+                <a href="" data-id="4" class="btn-add-cart">Adicionar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="C:\Users\felip\Desktop\Site\Imagens\over.jpg" alt="">
+                    <p><span>79</span>$</p>
+                </div>
+                <p class="title">Overwatch</p>
+                <a href="" data-id="5" class="btn-add-cart">Adicionar</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./javascript.js" ></script>
+    <script>loadCart();</script>
+</body>
+</html>
